@@ -1,7 +1,5 @@
-# Learn how to use Date format (date, created, updated)
-# -> https://gohugo.io/functions/dateformat/
-
 [posts]
+other = "Posts"
 
 [posts.title]
 other = "Post"
@@ -9,11 +7,11 @@ other = "Post"
 [posts.date]
 other = "Jan 2, 2006"
 
-
 [post]
+other = "Post"
 
 [post.created]
-other = "January 2, 2006"
+other = "Created on January 2, 2006"
 
 [post.updated]
-other = "Updated January 2, 2006"
+other = "Updated on January 2, 2006"
