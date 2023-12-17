@@ -1,0 +1,6 @@
+<span>
+  {{ $date := time (.Get "date") }} {{ $now := now }} {{ $diff := $now.Sub $date }} {{ $totalDays := div $diff.Hours 24 }} {{ $years := div
+  $totalDays 365 }} {{ $remainingDaysAfterYears := mod $totalDays 365 }} {{ $months := div $remainingDaysAfterYears 30 }} {{ $days := mod
+  $remainingDaysAfterYears 30 }} {{ $hours := mod $diff.Hours 24 }} {{ if ge $totalDays 365 }}{{ $years }}y{{ end }} {{ if gt
+  $remainingDaysAfterYears 30 }}{{ $months }}mo{{ end }} {{ $days }}d
+</span>
